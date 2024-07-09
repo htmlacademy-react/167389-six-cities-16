@@ -2,14 +2,13 @@ import PlaceCard from "../../components/place_card/place-card";
 import Header from "../../components/header/header"
 
 type NumbersPlacedCard = {
-  plasedCount: number;
-  hotelsCount: number;
+  placesCount: number;
 }
 
 
 
 
-function MainPage ({plasedCount, hotelsCount}: NumbersPlacedCard) : JSX.Element {
+function MainPage ({placesCount}: NumbersPlacedCard) : JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Header />
@@ -56,7 +55,7 @@ function MainPage ({plasedCount, hotelsCount}: NumbersPlacedCard) : JSX.Element 
           <div className="cities__places-container container">
             <section className="cities__places places">
               <h2 className="visually-hidden">Places</h2>
-              <b className="places__found">{plasedCount} places to stay in Amsterdam</b>
+              <b className="places__found">{placesCount} places to stay in Amsterdam</b>
               <form className="places__sorting" action="#" method="get">
                 <span className="places__sorting-caption">Sort by</span>
                 <span className="places__sorting-type" tabIndex={0}>
@@ -73,7 +72,7 @@ function MainPage ({plasedCount, hotelsCount}: NumbersPlacedCard) : JSX.Element 
                 </ul>
               </form>
               <div className="cities__places-list places__list tabs__content">
-                {Array.from({length: hotelsCount}, (_,index) => (
+                {Array.from({length: placesCount}, (_,index) => (
                 <PlaceCard key={index} />))}
 
 

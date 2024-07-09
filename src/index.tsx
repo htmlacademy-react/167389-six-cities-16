@@ -10,8 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App
-     placedCount = {Settings.PLACED_COUNT}
-     hotelsCount = {Settings.HOTELS_COUNT}
+     placesCount = {Settings.PLACES_COUNT}
     />
   </React.StrictMode>
 );

@@ -4,17 +4,15 @@ import MainPage from "../../pages/main/main";
 //import { Settings } from "../../const";
 
 type AppScreenProps = {
-  placedCount: number;
-  hotelsCount: number;
+  placesCount: number;
 }
 
 
-
-function App ({placedCount, hotelsCount}:AppScreenProps) : JSX.Element {
+function App ({placesCount}:AppScreenProps) : JSX.Element {
   return (
     <>
-     <MainPage plasedCount={placedCount}
-        hotelsCount={hotelsCount} />
+     <MainPage placesCount={placesCount}
+      />
     </>
   )
 }
