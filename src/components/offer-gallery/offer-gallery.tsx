@@ -6,9 +6,9 @@ export type Photo = {
 
 function OfferImage(props: Photo): JSX.Element {
   return (
-      <div className="offer__image-wrapper">
-        <img className="offer__image" src={`img/${props.GALLERY}.jpg`} alt="Photo studio" />
-      </div>
+    <div className="offer__image-wrapper">
+      <img className="offer__image" src={`img/${props.GALLERY}.jpg`} alt="Photo studio" />
+    </div>
   );
 }
 

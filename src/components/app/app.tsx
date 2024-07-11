@@ -11,9 +11,7 @@ type AppScreenProps = {
 
 function App ({placesCount}:AppScreenProps) : JSX.Element {
   return (
-    <>
-      <MainPage placesCount={placesCount}/>
-    </>
+    <MainPage placesCount={placesCount}/>
   );
 }
 export default App;
