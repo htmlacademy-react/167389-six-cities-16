@@ -3,7 +3,7 @@ function HeaderLogo(): JSX.Element {
     <a className="header__logo-link" href="main.html">
       <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41" />
     </a>
-  )
+  );
 }
 
 function HeaderNavLogged(): JSX.Element {
@@ -23,7 +23,7 @@ function HeaderNavLogged(): JSX.Element {
         </a>
       </li>
     </ul>
-  )
+  );
 }
 
 function HeaderNavNoLogged(): JSX.Element {
@@ -37,7 +37,7 @@ function HeaderNavNoLogged(): JSX.Element {
         </a>
       </li>
     </ul>
-  )
+  );
 }
 
 HeaderNavNoLogged();
@@ -56,7 +56,7 @@ function Header(): JSX.Element {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 
