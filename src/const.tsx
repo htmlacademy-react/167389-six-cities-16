@@ -10,3 +10,10 @@ export const CITIES: Array<string> = [
 export const GALLERY: Array<string> = [
   'room', 'apartment-01', 'apartment-02', 'apartment-03', 'studio-01','apartment-01'
 ];
+
+export enum AppRoute {
+  Main = '/',
+  Login = '/login',
+  Favorites = '/favorites',
+  Offer = '/offer'
+}
